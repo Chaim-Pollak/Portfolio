@@ -2,7 +2,10 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export function Home() {
   return (
-    <section id="home" className="min-h-screen flex justify-center items-center relative">
+    <section
+      id="home"
+      className="min-h-screen flex justify-center items-center relative"
+    >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#209d7d] to-[#3be9cf] bg-clip-text text-transparent leading-right">
@@ -10,9 +13,9 @@ export function Home() {
           </h1>
 
           <p className="text-gray-40 text-lg mb-8 max-w-lg mx-auto">
-            I'm a full-stack developer specializing in React, Node.js, and MongoDB. I build modern,
-            scalable, and efficient web applications with a focus on clean code and great user
-            experience.
+            I'm a full-stack developer specializing in React, Node.js, and
+            MongoDB. I build modern, scalable, and efficient web applications
+            with a focus on clean code and great user experience.
           </p>
 
           <div className="flex justify-center space-x-4">

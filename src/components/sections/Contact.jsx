@@ -27,7 +27,10 @@ export function Contact() {
       .catch(() => alert("Something went wrong. Try again."));
   }
   return (
-    <section id="contact" className="min-h-screen flex justify-center items-center py-20">
+    <section
+      id="contact"
+      className="min-h-screen flex justify-center items-center py-20"
+    >
       <RevealOnScroll>
         <div className="px-4 w-150">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#209d7d] to-[#3be9cf] bg-clip-text text-transparent text-center">
@@ -44,7 +47,9 @@ export function Contact() {
                 value={formData.name}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-[#4d9288] focus:bg-blue-500/5"
                 placeholder="Name..."
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
               />
             </div>
 
@@ -57,7 +62,9 @@ export function Contact() {
                 value={formData.email}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-[#4d9288] focus:bg-blue-500/5"
                 placeholder="Email..."
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
               />
             </div>
 
@@ -70,7 +77,9 @@ export function Contact() {
                 rows={5}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-[#4d9288] focus:bg-blue-500/5"
                 placeholder="Your Message..."
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
               />
             </div>
 

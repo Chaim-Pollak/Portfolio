@@ -2,12 +2,22 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export function About() {
   const skills = {
-    frontend: ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS", "Bootstrap"],
+    frontend: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Tailwind CSS",
+      "Bootstrap",
+    ],
     backend: ["Node.js & Express.js", "Python", "MongoDB", "SQL"],
   };
 
   return (
-    <section id="about" className="min-h-screen flex justify-center items-center py-20">
+    <section
+      id="about"
+      className="min-h-screen flex justify-center items-center py-20"
+    >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#209d7d] to-[#3be9cf] bg-clip-text text-transparent text-center">
@@ -16,11 +26,12 @@ export function About() {
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              As a dedicated full-stack developer, I specialize in building robust and efficient web
-              applications using React, Node.js, and MongoDB. My passion lies in crafting seamless
-              user experiences and optimizing performance on both the front-end and back-end. With a
-              problem-solving mindset and a keen eye for detail, I strive to develop innovative
-              solutions that make a real impact.
+              As a dedicated full-stack developer, I specialize in building
+              robust and efficient web applications using React, Node.js, and
+              MongoDB. My passion lies in crafting seamless user experiences and
+              optimizing performance on both the front-end and back-end. With a
+              problem-solving mindset and a keen eye for detail, I strive to
+              develop innovative solutions that make a real impact.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -59,11 +70,12 @@ export function About() {
               <h3 className="text-xl font-bold mb-4">Education</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong>Software Development Certificate</strong> , MeGo (2023-2025)
+                  <strong>Software Development Certificate</strong> , MeGo
+                  (2023-2025)
                 </li>
                 <li>
-                  Relevant Coursework: Full-Stack Development, Database Management, Web Development,
-                  API Integration
+                  Relevant Coursework: Full-Stack Development, Database
+                  Management, Web Development, API Integration
                 </li>
               </ul>
             </div>
@@ -71,7 +83,9 @@ export function About() {
               <h3 className="text-xl font-bold mb-4">Work Experience</h3>
               <div className="space-y-4 text-gray-300">
                 <div>
-                  <h4 className="font-semibold">Ready to contribute and grow professionally.</h4>
+                  <h4 className="font-semibold">
+                    Ready to contribute and grow professionally.
+                  </h4>
                   <p>Created and optimized web applications and services.</p>
                 </div>
               </div>

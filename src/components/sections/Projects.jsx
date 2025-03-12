@@ -13,7 +13,10 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex justify-center items-center py-20">
+    <section
+      id="projects"
+      className="min-h-screen flex justify-center items-center py-20"
+    >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#209d7d] to-[#3be9cf] bg-clip-text text-transparent text-center">
@@ -22,10 +25,13 @@ export function Projects() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#209d7d]/30 hover:shadow-[0_2px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-4">Construction Issue Manager</h3>
+              <h3 className="text-xl font-bold mb-4">
+                Construction Issue Manager
+              </h3>
               <p className="text-gray-400 mb-4">
-                Construction Issue Manager helps track, manage, and resolve issues in construction
-                projects, ensuring timely communication and efficient project progress
+                Construction Issue Manager helps track, manage, and resolve
+                issues in construction projects, ensuring timely communication
+                and efficient project progress
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {technologies.map((tech, key) => (
@@ -38,9 +44,13 @@ export function Projects() {
                 ))}
               </div>
 
-              <div className="flex justify-between items-center">
-                <a href="" className="text-[#24b2c2] hover:text-blue-300 transition-colors my-4">
-                  View Project →
+              <div className="flex justify-center ">
+                <a
+                  href="https://github.com/stars/Chaim-Pollak/lists/constructionissuesmanager"
+                  target="_blank"
+                  className="text-[#24b2c2] hover:text-blue-300 transition-colors my-4"
+                >
+                  View Project
                 </a>
               </div>
             </div>
