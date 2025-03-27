@@ -29,10 +29,10 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex justify-center items-center py-20"
+      className="min-h-screen flex flex-col justify-center items-enter py-20 mx-8"
     >
       <RevealOnScroll>
-        <div className="px-4 w-150">
+        <div className="max-w-screen-md mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#209d7d] to-[#3be9cf] bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
