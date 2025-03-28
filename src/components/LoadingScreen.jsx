@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export function LoadingScreen({ onComplete }) {
+  const { t } = useTranslation();
   const [text, setText] = useState("");
-  const fullText = "<Welcome />";
+  const fullText = `<${t("welcome")} />`;
 
   useEffect(() => {
     let index = 0;

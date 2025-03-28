@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export function MobileMenu({ menuOpen, setMenuOpen }) {
+  const { t } = useTranslation();
   return (
     <div
       className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col justify-center items-center transition-all duration-300 ease-in-out ${
@@ -22,7 +25,7 @@ export function MobileMenu({ menuOpen, setMenuOpen }) {
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        Home
+        {t("navbar.home")}
       </a>
       <a
         href="#about"
@@ -31,7 +34,7 @@ export function MobileMenu({ menuOpen, setMenuOpen }) {
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        About
+        {t("navbar.about")}
       </a>
       <a
         href="#projects"
@@ -40,7 +43,7 @@ export function MobileMenu({ menuOpen, setMenuOpen }) {
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        Projects
+        {t("navbar.projects")}
       </a>
       <a
         href="#contact"
@@ -49,7 +52,7 @@ export function MobileMenu({ menuOpen, setMenuOpen }) {
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        Contact
+        {t("navbar.contact")}
       </a>
     </div>
   );

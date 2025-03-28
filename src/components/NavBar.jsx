@@ -1,6 +1,8 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export function NavBar({ menuOpen, setMenuOpen }) {
+  const { t } = useTranslation();
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
@@ -29,25 +31,25 @@ export function NavBar({ menuOpen, setMenuOpen }) {
               href="#home"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              Home
+              {t("navbar.home")}
             </a>
             <a
               href="#about"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              About
+              {t("navbar.about")}
             </a>
             <a
               href="#projects"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              Projects
+              {t("navbar.projects")}
             </a>
             <a
               href="#contact"
               className="text-gray-300 hover:text-white transition-colors"
             >
-              Contact
+              {t("navbar.contact")}
             </a>
           </div>
         </div>
