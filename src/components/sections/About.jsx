@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export function About() {
+  const { t } = useTranslation();
   const skills = {
     frontend: [
       "HTML",
@@ -21,22 +23,17 @@ export function About() {
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#209d7d] to-[#3be9cf] bg-clip-text text-transparent text-center">
-            About Me
+            {t("about.title")}
           </h2>
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-300 mb-6">
-              As a dedicated full-stack developer, I specialize in building
-              robust and efficient web applications using React, Node.js, and
-              MongoDB. My passion lies in crafting seamless user experiences and
-              optimizing performance on both the front-end and back-end. With a
-              problem-solving mindset and a keen eye for detail, I strive to
-              develop innovative solutions that make a real impact.
-            </p>
+            <p className="text-gray-300 mb-6">{t("about.description")}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4">Frontend</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  {t("about.frontend")}
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.frontend.map((skill, key) => (
                     <span
@@ -50,7 +47,10 @@ export function About() {
               </div>
 
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4">Backend</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  {" "}
+                  {t("about.backend")}
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.backend.map((skill, key) => (
                     <span
@@ -67,26 +67,22 @@ export function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">Education</h3>
+              <h3 className="text-xl font-bold mb-4">{t("about.education")}</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong>Software Development Certificate</strong> , MeGo
-                  (2023-2025)
+                  <strong>{t("about.certificate")}</strong>, MeGo (2023-2025)
                 </li>
-                <li>
-                  Relevant Coursework: Full-Stack Development, Database
-                  Management, Web Development, API Integration
-                </li>
+                <li>{t("about.courses")}</li>
               </ul>
             </div>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">Work Experience</h3>
+              <h3 className="text-xl font-bold mb-4">
+                {t("about.experience")}
+              </h3>
               <div className="space-y-4 text-gray-300">
                 <div>
-                  <h4 className="font-semibold">
-                    Ready to contribute and grow professionally.
-                  </h4>
-                  <p>Created and optimized web applications and services.</p>
+                  <h4 className="font-semibold">{t("about.internship")}</h4>
+                  <p>{t("about.created")}</p>
                 </div>
               </div>
             </div>

@@ -1,0 +1,53 @@
+{
+  "home": {
+    "greeting": "Hi, I'm Chaim Pollak",
+    "intro": "I'm a full-stack developer specializing in React, Node.js, and MongoDB. I build modern, scalable, and efficient web applications with a focus on clean code and great user experience.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+
+  "about": {
+    "title": "About Me",
+    "description": "As a dedicated full-stack developer, I specialize in building robust and efficient web applications using React, Node.js, and MongoDB. My passion lies in crafting seamless user experiences and optimizing performance on both the front-end and back-end. With a problem-solving mindset and a keen eye for detail, I strive to develop innovative solutions that make a real impact.",
+    "frontend": "Front-End",
+    "backend": "Back-End",
+    "education": "Education",
+    "certificate": "Software Development Certificate",
+    "courses": "Relevant Coursework: Full-Stack Development, Database Management, Web Development, API Integration",
+    "experience": "Work Experience",
+    "internship": "Ready to contribute and grow professionally.",
+    "created": "Created and optimized web applications and services."
+  },
+
+  "projects": {
+    "title": "Featured Projects",
+    "project1": {
+      "title": "Construction Issue Manager",
+      "description": "Construction Issue Manager helps track, manage, and resolve issues in construction projects, ensuring timely communication and efficient project progress",
+      "viewProject": "View Project"
+    },
+
+    "project2": {
+      "title": "Social Media Application",
+      "description": "Social Media App helps users connect through communities, share posts, and engage with comments and likes, ensuring seamless interaction and a dynamic social experience.",
+      "viewProject": "View Project"
+    }
+  },
+
+  "contact": {
+    "title": "Get In Touch",
+    "name": "Name...",
+    "email": "Email...",
+    "sendMessage": "Your Message...",
+    "btnSend": "Send Message"
+  },
+
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "welcome": "Welcome"
+}
