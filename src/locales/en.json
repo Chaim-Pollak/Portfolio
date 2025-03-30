@@ -49,5 +49,10 @@
     "contact": "Contact"
   },
 
-  "welcome": "Welcome"
+  "welcome": "Welcome",
+
+  "toast": {
+    "success": "Thanks for the opportunity.",
+    "error": "Something went wrong. Please try again."
+  }
 }
