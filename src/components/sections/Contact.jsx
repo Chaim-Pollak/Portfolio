@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "@emailjs/browser";
+import { ErrorToast, SuccessToast } from "../Toast";
 
 export function Contact() {
   const { t } = useTranslation();
@@ -22,10 +23,10 @@ export function Contact() {
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then(() => {
-        alert("Message Sent Successfully!");
+        SuccessToast(t);
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Something went wrong. Try again."));
+      .catch(() => ErrorToast(t));
   }
   return (
     <section
